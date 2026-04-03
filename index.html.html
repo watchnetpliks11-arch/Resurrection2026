@@ -1,0 +1,1330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GLORIOUS! — Resurrection Sunday 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --gold: #C9973A;
+    --gold-light: #F0C96B;
+    --gold-pale: #FDF3DC;
+    --ivory: #FFFDF5;
+    --cream: #FAF4E6;
+    --sky: #D6EAF8;
+    --sky-deep: #A8CCE8;
+    --blue-accent: #2980B9;
+    --dawn: #F9E4C0;
+    --rose-dawn: #F5D9C0;
+    --warm-white: #FEFCF7;
+    --charcoal: #2C2C2C;
+    --text-dark: #1A1A2E;
+    --text-mid: #3D3D3D;
+    --text-soft: #666;
+    --divider: #D4AF6A;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #1A120A;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--charcoal);
+    padding: 0;
+  }
+
+  .page {
+    max-width: 900px;
+    margin: 0 auto;
+    background: var(--ivory);
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* ═══════════════════════════════ HEADER ═══════════════════════════════ */
+  .header {
+    background: linear-gradient(160deg, #0D1B2A 0%, #1B2D44 30%, #2C4A6E 60%, #3D6B9E 80%, #5B8FBF 100%);
+    position: relative;
+    padding: 60px 50px 80px;
+    text-align: center;
+    overflow: hidden;
+    min-height: 480px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Sunrise rays */
+  .header::before {
+    content: '';
+    position: absolute;
+    bottom: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 500px solid transparent;
+    border-right: 500px solid transparent;
+    border-bottom: 300px solid rgba(240, 201, 107, 0.12);
+    z-index: 1;
+  }
+
+  .header::after {
+    content: '';
+    position: absolute;
+    bottom: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 350px solid transparent;
+    border-right: 350px solid transparent;
+    border-bottom: 280px solid rgba(240, 201, 107, 0.18);
+    z-index: 1;
+  }
+
+  .sun-glow {
+    position: absolute;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255,215,0,0.35) 0%, rgba(240,180,60,0.15) 40%, transparent 70%);
+    z-index: 2;
+  }
+
+  .ray {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    height: 260px;
+    width: 2px;
+    background: linear-gradient(to top, rgba(240,201,107,0.5), transparent);
+    transform-origin: bottom center;
+    z-index: 2;
+  }
+  .ray:nth-child(1) { transform: translateX(-50%) rotate(-60deg); }
+  .ray:nth-child(2) { transform: translateX(-50%) rotate(-45deg); }
+  .ray:nth-child(3) { transform: translateX(-50%) rotate(-30deg); }
+  .ray:nth-child(4) { transform: translateX(-50%) rotate(-15deg); }
+  .ray:nth-child(5) { transform: translateX(-50%) rotate(0deg); }
+  .ray:nth-child(6) { transform: translateX(-50%) rotate(15deg); }
+  .ray:nth-child(7) { transform: translateX(-50%) rotate(30deg); }
+  .ray:nth-child(8) { transform: translateX(-50%) rotate(45deg); }
+  .ray:nth-child(9) { transform: translateX(-50%) rotate(60deg); }
+
+  .header-content { position: relative; z-index: 10; }
+
+  .church-name {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    color: var(--gold-light);
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+
+  .resurrection-label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    font-weight: 300;
+    letter-spacing: 6px;
+    color: rgba(255,255,255,0.7);
+    text-transform: uppercase;
+    margin-bottom: 24px;
+  }
+
+  .cross-symbol {
+    font-size: 48px;
+    color: var(--gold-light);
+    margin-bottom: 16px;
+    text-shadow: 0 0 30px rgba(240,201,107,0.8);
+    display: block;
+    line-height: 1;
+  }
+
+  .main-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 96px;
+    font-weight: 900;
+    color: #fff;
+    line-height: 0.9;
+    letter-spacing: -2px;
+    text-shadow: 0 0 60px rgba(240,201,107,0.4), 0 4px 20px rgba(0,0,0,0.5);
+    margin-bottom: 8px;
+  }
+
+  .main-title span {
+    color: var(--gold-light);
+  }
+
+  .exclaim {
+    color: var(--gold-light);
+    text-shadow: 0 0 40px rgba(240,201,107,0.9);
+  }
+
+  .subtitle-line {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 13px;
+    font-style: italic;
+    color: rgba(255,255,255,0.85);
+    letter-spacing: 2px;
+    margin-bottom: 28px;
+  }
+
+  .header-divider {
+    width: 120px;
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--gold-light), transparent);
+    margin: 0 auto 28px;
+  }
+
+  .key-verse-box {
+    background: rgba(255,255,255,0.07);
+    border: 1px solid rgba(240,201,107,0.4);
+    border-radius: 4px;
+    padding: 20px 28px;
+    max-width: 640px;
+    margin: 0 auto;
+    backdrop-filter: blur(4px);
+  }
+
+  .verse-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 15px;
+    font-style: italic;
+    color: rgba(255,255,255,0.95);
+    line-height: 1.7;
+    margin-bottom: 8px;
+  }
+
+  .verse-ref {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: var(--gold-light);
+    text-transform: uppercase;
+  }
+
+  .event-details {
+    margin-top: 24px;
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .event-pill {
+    background: rgba(240,201,107,0.15);
+    border: 1px solid rgba(240,201,107,0.5);
+    border-radius: 20px;
+    padding: 6px 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: var(--gold-light);
+    text-transform: uppercase;
+  }
+
+  /* ═══════════════════════════════ THEME SECTION ═══════════════════════════════ */
+  .section {
+    padding: 50px 50px;
+    position: relative;
+  }
+
+  .section-label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 12px;
+  }
+
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 28px;
+    line-height: 1.2;
+  }
+
+  .theme-bg {
+    background: linear-gradient(135deg, var(--cream) 0%, var(--dawn) 50%, var(--sky) 100%);
+  }
+
+  .callout {
+    background: linear-gradient(135deg, rgba(201,151,58,0.12) 0%, rgba(240,201,107,0.06) 100%);
+    border-left: 4px solid var(--gold);
+    border-radius: 0 6px 6px 0;
+    padding: 20px 24px;
+    margin-bottom: 18px;
+  }
+
+  .callout p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 16px;
+    line-height: 1.75;
+    color: var(--text-mid);
+  }
+
+  .emphasis-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 700;
+    font-style: italic;
+    color: var(--gold);
+    text-align: center;
+    padding: 24px 0;
+    border-top: 1px solid rgba(201,151,58,0.3);
+    border-bottom: 1px solid rgba(201,151,58,0.3);
+    margin: 28px 0;
+  }
+
+  .three-events {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+    margin: 28px 0;
+  }
+
+  .event-card {
+    background: var(--warm-white);
+    border: 1px solid rgba(201,151,58,0.25);
+    border-radius: 8px;
+    padding: 24px 18px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+  }
+
+  .event-card-icon {
+    font-size: 28px;
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  .event-card-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 8px;
+  }
+
+  .event-card-desc {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 14px;
+    color: var(--text-mid);
+    line-height: 1.5;
+  }
+
+  .result-banner {
+    background: linear-gradient(135deg, #1B2D44, #2C4A6E);
+    border-radius: 8px;
+    padding: 28px 32px;
+    text-align: center;
+    margin-top: 24px;
+  }
+
+  .result-banner-label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    color: var(--gold-light);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  .result-banner-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.3;
+  }
+
+  .result-banner-text em {
+    color: var(--gold-light);
+    font-style: normal;
+  }
+
+  /* ═══════════════════════════════ DIVIDER ═══════════════════════════════ */
+  .gold-divider {
+    height: 3px;
+    background: linear-gradient(to right, transparent, var(--gold), var(--gold-light), var(--gold), transparent);
+    margin: 0;
+  }
+
+  .thin-divider {
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--gold), transparent);
+    margin: 0 50px;
+  }
+
+  /* ═══════════════════════════════ SERVICE FLOW ═══════════════════════════════ */
+  .flow-bg {
+    background: linear-gradient(180deg, var(--ivory) 0%, #EFF6FF 100%);
+  }
+
+  .flow-container {
+    position: relative;
+  }
+
+  .flow-line {
+    position: absolute;
+    left: 42px;
+    top: 40px;
+    bottom: 40px;
+    width: 2px;
+    background: linear-gradient(to bottom, var(--gold-light), var(--sky-deep));
+  }
+
+  .flow-item {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 6px;
+    position: relative;
+    align-items: flex-start;
+  }
+
+  .flow-time {
+    min-width: 84px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    color: var(--gold);
+    padding-top: 14px;
+    text-align: right;
+    letter-spacing: 0.5px;
+  }
+
+  .flow-dot {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: var(--gold);
+    border: 3px solid var(--ivory);
+    box-shadow: 0 0 0 2px var(--gold-light);
+    flex-shrink: 0;
+    margin-top: 10px;
+    z-index: 2;
+    position: relative;
+  }
+
+  .flow-dot.blue { background: var(--blue-accent); box-shadow: 0 0 0 2px var(--sky-deep); }
+  .flow-dot.dark { background: #1B2D44; box-shadow: 0 0 0 2px var(--sky-deep); }
+  .flow-dot.special { background: linear-gradient(135deg, var(--gold), var(--gold-light)); box-shadow: 0 0 0 2px var(--gold-light), 0 0 12px rgba(240,201,107,0.5); }
+
+  .flow-card {
+    flex: 1;
+    background: var(--warm-white);
+    border: 1px solid rgba(201,151,58,0.2);
+    border-radius: 8px;
+    padding: 14px 20px;
+    margin-bottom: 8px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+  }
+
+  .flow-card.highlight {
+    background: linear-gradient(135deg, #FFF8EC, #FEF0D0);
+    border-color: rgba(201,151,58,0.5);
+    box-shadow: 0 4px 20px rgba(201,151,58,0.15);
+  }
+
+  .flow-card.blue-card {
+    background: linear-gradient(135deg, #EBF5FB, #D6EAF8);
+    border-color: rgba(41,128,185,0.25);
+  }
+
+  .flow-card.dark-card {
+    background: linear-gradient(135deg, #1B2D44, #2C4A6E);
+    border-color: transparent;
+  }
+
+  .flow-card-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 4px;
+  }
+
+  .flow-card.dark-card .flow-card-title { color: var(--gold-light); }
+
+  .flow-card-sub {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--gold);
+    margin-bottom: 6px;
+    text-transform: uppercase;
+  }
+
+  .flow-card.dark-card .flow-card-sub { color: rgba(240,201,107,0.7); }
+
+  .flow-card-detail {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 14px;
+    color: var(--text-soft);
+    line-height: 1.5;
+  }
+
+  .flow-card.dark-card .flow-card-detail { color: rgba(255,255,255,0.75); }
+
+  .declarations-box {
+    background: linear-gradient(135deg, rgba(240,201,107,0.12), rgba(41,128,185,0.08));
+    border: 1px solid rgba(201,151,58,0.3);
+    border-radius: 6px;
+    padding: 14px 18px;
+    margin-top: 6px;
+  }
+
+  .decl-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--gold);
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+
+  .decl-heading {
+    font-family: 'Playfair Display', serif;
+    font-size: 13px;
+    font-weight: 700;
+    color: #1B2D44;
+    margin-bottom: 8px;
+    font-style: italic;
+  }
+
+  .decl-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4px 16px;
+  }
+
+  .decl-list li {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 13px;
+    color: var(--text-mid);
+    padding-left: 14px;
+    position: relative;
+  }
+
+  .decl-list li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--gold);
+    font-size: 11px;
+  }
+
+  .compass {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: var(--text-soft);
+    text-align: center;
+    margin-top: 8px;
+    text-transform: uppercase;
+  }
+
+  /* ═══════════════════════════════ THEME CONTENT ═══════════════════════════════ */
+  .content-bg {
+    background: linear-gradient(160deg, #FFFDF5, #F0EDE5);
+  }
+
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin: 20px 0;
+  }
+
+  .content-block {
+    background: var(--warm-white);
+    border: 1px solid rgba(201,151,58,0.2);
+    border-radius: 8px;
+    padding: 22px 20px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+  }
+
+  .content-block-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 10px;
+  }
+
+  .content-block p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 15px;
+    line-height: 1.75;
+    color: var(--text-mid);
+  }
+
+  .question-box {
+    background: linear-gradient(135deg, #1B2D44, #163050);
+    border-radius: 10px;
+    padding: 32px 36px;
+    margin: 28px 0;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .question-box::before {
+    content: '?';
+    position: absolute;
+    right: -10px;
+    top: -20px;
+    font-family: 'Playfair Display', serif;
+    font-size: 180px;
+    color: rgba(255,255,255,0.04);
+    font-weight: 900;
+    line-height: 1;
+  }
+
+  .question-label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    color: var(--gold-light);
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+
+  .question-item {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 16px;
+    font-style: italic;
+    color: rgba(255,255,255,0.9);
+    line-height: 1.6;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+
+  .question-item:last-child { border-bottom: none; }
+
+  .new-life-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin: 20px 0;
+  }
+
+  .new-life-card {
+    background: linear-gradient(135deg, #E8F4FD, #D6EAF8);
+    border: 1px solid rgba(41,128,185,0.2);
+    border-radius: 8px;
+    padding: 18px 12px;
+    text-align: center;
+  }
+
+  .new-life-icon { font-size: 22px; margin-bottom: 8px; display: block; }
+
+  .new-life-label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--blue-accent);
+  }
+
+  .new-life-desc {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 13px;
+    color: var(--text-mid);
+    margin-top: 4px;
+    line-height: 1.4;
+  }
+
+  .imago-box {
+    background: linear-gradient(135deg, rgba(240,201,107,0.2), rgba(201,151,58,0.1));
+    border: 2px solid var(--gold);
+    border-radius: 10px;
+    padding: 28px 32px;
+    text-align: center;
+    margin: 24px 0;
+  }
+
+  .imago-box .big-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--text-dark);
+    line-height: 1.3;
+    margin-bottom: 10px;
+  }
+
+  .imago-box .big-text em { color: var(--gold); font-style: normal; }
+
+  .imago-box p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 15px;
+    color: var(--text-mid);
+    line-height: 1.7;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .scripture-inline {
+    background: rgba(201,151,58,0.08);
+    border-left: 3px solid var(--gold);
+    padding: 8px 16px;
+    margin: 16px 0;
+    border-radius: 0 4px 4px 0;
+  }
+
+  .scripture-inline p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 15px;
+    font-style: italic;
+    color: var(--text-mid);
+    line-height: 1.6;
+  }
+
+  .scripture-inline .ref {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: var(--gold);
+    text-transform: uppercase;
+    margin-top: 4px;
+    font-style: normal;
+    display: block;
+  }
+
+  .iran-callout {
+    background: linear-gradient(135deg, #1B2D44, #2C4A6E);
+    border-radius: 8px;
+    padding: 24px 28px;
+    margin: 20px 0;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+  }
+
+  .iran-icon { font-size: 40px; flex-shrink: 0; }
+
+  .iran-text p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 15px;
+    color: rgba(255,255,255,0.9);
+    line-height: 1.7;
+  }
+
+  .iran-text strong {
+    color: var(--gold-light);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  /* ═══════════════════════════════ EMPHASIS ═══════════════════════════════ */
+  .emphasis-bg {
+    background: linear-gradient(160deg, #0D1B2A 0%, #1B2D44 100%);
+  }
+
+  .truth-banner {
+    border: 2px solid var(--gold);
+    border-radius: 10px;
+    padding: 36px 40px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .truth-banner::before {
+    content: '✝';
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 100px;
+    color: rgba(240,201,107,0.08);
+  }
+
+  .truth-banner::after {
+    content: '✝';
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 100px;
+    color: rgba(240,201,107,0.08);
+  }
+
+  .truth-label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    color: var(--gold-light);
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+
+  .truth-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    font-weight: 900;
+    color: #fff;
+    margin-bottom: 20px;
+    text-shadow: 0 0 40px rgba(240,201,107,0.3);
+  }
+
+  .truth-title span { color: var(--gold-light); }
+
+  .truth-body {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 16px;
+    font-style: italic;
+    color: rgba(255,255,255,0.85);
+    line-height: 1.75;
+    max-width: 600px;
+    margin: 0 auto 20px;
+  }
+
+  .truth-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin: 16px 0;
+  }
+
+  .truth-list li {
+    background: rgba(240,201,107,0.1);
+    border: 1px solid rgba(240,201,107,0.3);
+    border-radius: 20px;
+    padding: 6px 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--gold-light);
+    text-transform: uppercase;
+  }
+
+  .final-call {
+    background: linear-gradient(135deg, rgba(201,151,58,0.25), rgba(240,201,107,0.15));
+    border: 1px solid rgba(240,201,107,0.5);
+    border-radius: 8px;
+    padding: 24px 28px;
+    margin-top: 28px;
+  }
+
+  .final-call p {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-style: italic;
+    color: #fff;
+    line-height: 1.6;
+    text-align: center;
+  }
+
+  .final-call em { color: var(--gold-light); font-style: normal; font-weight: 700; }
+
+  /* ═══════════════════════════════ FOOTER ═══════════════════════════════ */
+  .footer {
+    background: linear-gradient(135deg, #0D1B2A 0%, #1A1208 100%);
+    padding: 40px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    border-top: 3px solid var(--gold);
+  }
+
+  .footer-left .church {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--gold-light);
+    margin-bottom: 4px;
+  }
+
+  .footer-left .newlife {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: rgba(255,255,255,0.6);
+    text-transform: uppercase;
+  }
+
+  .footer-center {
+    text-align: center;
+  }
+
+  .footer-center .cross {
+    font-size: 32px;
+    color: var(--gold);
+    display: block;
+    margin-bottom: 4px;
+    text-shadow: 0 0 20px rgba(201,151,58,0.5);
+  }
+
+  .footer-center .date {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: var(--gold-light);
+    text-transform: uppercase;
+  }
+
+  .footer-right {
+    text-align: right;
+  }
+
+  .footer-right .preacher {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 16px;
+    font-style: italic;
+    color: rgba(255,255,255,0.85);
+    margin-bottom: 2px;
+  }
+
+  .footer-right .preacher-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 9px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: rgba(255,255,255,0.5);
+    text-transform: uppercase;
+  }
+
+  .kids-note {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 6px;
+    padding: 12px 20px;
+    margin-top: 16px;
+    width: 100%;
+  }
+
+  .kids-note p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 13px;
+    font-style: italic;
+    color: rgba(255,255,255,0.6);
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  .kids-note p strong {
+    color: var(--gold-light);
+    font-style: normal;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    .main-title { font-size: 64px; }
+    .section { padding: 36px 24px; }
+    .three-events { grid-template-columns: 1fr; }
+    .two-col { grid-template-columns: 1fr; }
+    .new-life-grid { grid-template-columns: 1fr 1fr; }
+    .footer { flex-direction: column; text-align: center; }
+    .footer-right { text-align: center; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- ══════════════════════ HEADER ══════════════════════ -->
+  <header class="header">
+    <div class="ray"></div>
+    <div class="ray"></div>
+    <div class="ray"></div>
+    <div class="ray"></div>
+    <div class="ray"></div>
+    <div class="ray"></div>
+    <div class="ray"></div>
+    <div class="ray"></div>
+    <div class="ray"></div>
+    <div class="sun-glow"></div>
+
+    <div class="header-content">
+      <div class="resurrection-label">A Resurrection Sunday Celebration of</div>
+      <div class="church-name">Pampanga Global Methodist Church</div>
+      <div class="church-name" style="font-weight:300; letter-spacing:3px; color:rgba(255,255,255,0.6); margin-bottom:20px;">with Rev. David Jonathan Alcantara · NewLife Church, Arayat Pampanga</div>
+
+      <span class="cross-symbol">✝</span>
+
+      <h1 class="main-title">"<span class="exclaim">GLORIOUS</span>!"</h1>
+
+      <div class="header-divider"></div>
+
+      <div class="key-verse-box">
+        <p class="verse-text">"For we died and were buried with Christ by baptism. And just as Christ was raised from the dead by the glorious power of the Father, now we also may live new lives."</p>
+        <div class="verse-ref">Romans 6:4–5 · NLT</div>
+      </div>
+
+      <div class="event-details">
+        <div class="event-pill">April 05, 2026</div>
+        <div class="event-pill">Resurrection Sunday</div>
+        <div class="event-pill">NewLife Church · Arayat, Pampanga</div>
+      </div>
+    </div>
+  </header>
+
+  <div class="gold-divider"></div>
+
+  <!-- ══════════════════════ THEME BACKGROUND ══════════════════════ -->
+  <section class="section theme-bg">
+    <div class="section-label">Theme Background</div>
+    <h2 class="section-title">Why This Message, Why Now</h2>
+
+    <div class="callout">
+      <p>The ongoing conflict involving the US, Iran, Israel, the Middle East, and other nations taking sides is affecting the world economically and prompting churches to reexamine the fundamental reason why Jesus Himself built the church — and the character it embodies — so much so that not even the gates of Hades can overpower it <em>(Matthew 16:18).</em></p>
+    </div>
+
+    <div class="question-box">
+      <div class="question-label">Central Questions We Are Asking</div>
+      <div class="question-item">What is the connection between the Resurrection of Jesus and the present state of the world?</div>
+      <div class="question-item">How do we celebrate this truth and manifest the presence and power of the kingdom, where Jesus is King, amid crisis, violence, and death?</div>
+      <div class="question-item">What does it mean to live as new creations with new lives?</div>
+      <div class="question-item">How does a glorious life look in a world where glamour and glory seem achievable through human means?</div>
+    </div>
+
+    <div class="three-events">
+      <div class="event-card">
+        <span class="event-card-icon">⚰️</span>
+        <div class="event-card-title">Death</div>
+        <div class="event-card-desc">Jesus' death — a historical event witnessed by the world</div>
+      </div>
+      <div class="event-card">
+        <span class="event-card-icon">🪨</span>
+        <div class="event-card-title">Burial</div>
+        <div class="event-card-desc">Jesus' burial — Paul presented baptism as a public declaration of this event</div>
+      </div>
+      <div class="event-card" style="background: linear-gradient(135deg, #FFF8EC, #FEF0D0); border-color: rgba(201,151,58,0.5);">
+        <span class="event-card-icon">☀️</span>
+        <div class="event-card-title" style="color: var(--gold);">Resurrection</div>
+        <div class="event-card-desc">Jesus rising from the dead by the <strong>glorious power of the Father</strong></div>
+      </div>
+    </div>
+
+    <div class="result-banner">
+      <div class="result-banner-label">The Response to These Three Historical Events</div>
+      <div class="result-banner-text"><em>NOW WE ALSO MAY LIVE NEW LIVES.</em></div>
+    </div>
+
+    <div class="scripture-inline" style="margin-top: 24px;">
+      <p>"If anyone is in Christ, he is a new creation; the old has gone, the new has come."</p>
+      <span class="ref">2 Corinthians 5:17</span>
+    </div>
+
+    <div class="callout" style="margin-top: 16px;">
+      <p>The new life Paul describes can only occur in Christ. But what does that look like if it is based on these three historical facts — Jesus' death, burial, and resurrection, witnessed by real people in history? How does this new life connect with Jesus' message: <em>"Repent, for the kingdom of heaven is at hand" (Matthew 4:17)?</em></p>
+    </div>
+  </section>
+
+  <div class="thin-divider"></div>
+
+  <!-- ══════════════════════ THEOLOGY DEEPDIVE ══════════════════════ -->
+  <section class="section content-bg">
+    <div class="section-label">Theological Foundation</div>
+    <h2 class="section-title">What New Life Truly Looks Like</h2>
+
+    <div class="two-col">
+      <div class="content-block">
+        <div class="content-block-title">Paul's Purpose in Romans</div>
+        <p>One reason the apostle Paul wrote the Epistle to the Romans was to deliberately proclaim the gospel in a place where diverse cultures existed and debates among highly intellectual and orderly people were common. Paul presented "baptism" not merely as a ritual but as a public declaration of two historical events witnessed by the world.</p>
+      </div>
+      <div class="content-block">
+        <div class="content-block-title">The Enemy's Strategy — And Why It Fails</div>
+        <p>Despite attempts by the enemy to erase these events through ideologies like atheism, communism, and liberalism, they remain the strongest evidence of the faith we hold and the message we continue to preach. They are the foundation for new lives.</p>
+      </div>
+    </div>
+
+    <div class="new-life-grid">
+      <div class="new-life-card">
+        <span class="new-life-icon">🧠</span>
+        <div class="new-life-label">A New Mind</div>
+        <div class="new-life-desc">Transformed thinking rooted in Christ</div>
+      </div>
+      <div class="new-life-card">
+        <span class="new-life-icon">❤️</span>
+        <div class="new-life-label">A New Heart</div>
+        <div class="new-life-desc">Desires and passions aligned with God</div>
+      </div>
+      <div class="new-life-card">
+        <span class="new-life-icon">🕊️</span>
+        <div class="new-life-label">A New Spirit</div>
+        <div class="new-life-desc">Alive in the Holy Spirit's presence</div>
+      </div>
+      <div class="new-life-card">
+        <span class="new-life-icon">🌱</span>
+        <div class="new-life-label">A New Way of Living</div>
+        <div class="new-life-desc">Not just new habits — entirely new life</div>
+      </div>
+    </div>
+
+    <div class="imago-box">
+      <div class="big-text">The Restoration of <em>Imago Dei</em></div>
+      <p>The resurrection of Jesus marks the restoration of the <em>imago Dei</em> — being created in the image of God — for all who believe in Him. Paul states in 1 Corinthians 4:20: <strong>"For the kingdom of God is not just a lot of talk; it is living by God's power."</strong> (NLT)</p>
+    </div>
+
+    <div class="iran-callout">
+      <div class="iran-icon">🌍</div>
+      <div class="iran-text">
+        <strong>New Life in Action — A Living Testimony</strong>
+        <p>This is why churches outside Iran, even in the face of radical Islam, have witnessed the remarkable growth of Christianity there. Iran today is home to one of the fastest-growing churches in the world. How can this be? This is what NEW LIFE looks like: not bowing to worldly kingdoms and moving according to the presence and power of the Holy Spirit boldly.</p>
+      </div>
+    </div>
+
+    <div class="emphasis-text">
+      "We gather today to celebrate new lives birthed from the historical resurrection of Jesus Christ. This truth cannot be erased, deleted, edited, or twisted. IT REMAINS GLORIOUS."
+    </div>
+  </section>
+
+  <div class="gold-divider"></div>
+
+  <!-- ══════════════════════ SERVICE FLOW ══════════════════════ -->
+  <section class="section flow-bg">
+    <div class="section-label">Service Flow</div>
+    <h2 class="section-title">Order of Celebration — Resurrection Sunday</h2>
+
+    <div class="flow-container">
+      <div class="flow-line"></div>
+
+      <!-- PRE-SERVICE -->
+      <div class="flow-item">
+        <div class="flow-time">5:00 – 5:45</div>
+        <div class="flow-dot special"></div>
+        <div class="flow-card highlight" style="flex:1;">
+          <div class="flow-card-sub">Pre-Service</div>
+          <div class="flow-card-title">Prayer Time</div>
+          <div class="flow-card-detail">Prayer for healing, prayer for wisdom, and intercession by all Workers, Candidates to the Ministry, and Trained Lay</div>
+          <div class="flow-card-detail" style="margin-top:8px; color: var(--gold);">c/o <strong>Pastor Phoebe &amp; Pastor Mary Grace</strong></div>
+        </div>
+      </div>
+
+      <!-- SHOFAR + CREED -->
+      <div class="flow-item">
+        <div class="flow-time">5:45 – 6:00</div>
+        <div class="flow-dot blue"></div>
+        <div class="flow-card blue-card" style="flex:1;">
+          <div class="flow-card-sub">Opening Rites</div>
+          <div class="flow-card-title">Blowing of the Shofar</div>
+          <div class="flow-card-detail"><strong>Czar Dayao</strong></div>
+          <div class="flow-card-detail" style="margin-top:8px;"><strong>The Apostle's Creed (Tagalog)</strong> — <em>Ryzia Audriel Tangcuangco</em></div>
+        </div>
+      </div>
+
+      <!-- WORSHIP 1 -->
+      <div class="flow-item">
+        <div class="flow-time">6:00 – 6:10</div>
+        <div class="flow-dot"></div>
+        <div class="flow-card" style="flex:1;">
+          <div class="flow-card-sub">Worship Set 1 · ACC Worship Team</div>
+          <div class="flow-card-title">"All Hail King Jesus / Forever"</div>
+        </div>
+      </div>
+
+      <!-- TESTIMONIES -->
+      <div class="flow-item">
+        <div class="flow-time">6:10 – 6:40</div>
+        <div class="flow-dot special"></div>
+        <div class="flow-card highlight" style="flex:1;">
+          <div class="flow-card-sub">Testimonies — One from Each Church</div>
+          <div class="flow-card-title">Short Testimonies</div>
+          <div class="flow-card-detail">
+            <strong>Wendell</strong> — NewLife Church &nbsp;|&nbsp;
+            <strong>Hazel</strong> — CCC (TGHUB) &nbsp;|&nbsp;
+            <strong>JB</strong> — JRFC &nbsp;|&nbsp;
+            <strong>Jesse Cadence</strong> — ACC
+          </div>
+        </div>
+      </div>
+
+      <!-- WORSHIP 2 -->
+      <div class="flow-item">
+        <div class="flow-time">6:40 – 6:50</div>
+        <div class="flow-dot"></div>
+        <div class="flow-card" style="flex:1;">
+          <div class="flow-card-sub">Worship Set 2 · CCC (TGHUB) Worship</div>
+          <div class="flow-card-title">"Echo / Goodbye Yesterday (Washed)"</div>
+        </div>
+      </div>
+
+      <!-- PROPHETIC PRAYER -->
+      <div class="flow-item">
+        <div class="flow-time">6:50 – 7:10</div>
+        <div class="flow-dot special"></div>
+        <div class="flow-card highlight" style="flex:1;">
+          <div class="flow-card-sub">Prophetic Prayer Declarations · Pastor Phoebe</div>
+          <div class="flow-card-title">YOUR KINGDOM COME, YOUR WILL BE DONE</div>
+
+          <div class="declarations-box" style="margin-top:12px;">
+            <div class="decl-title">Declaring Over:</div>
+            <div class="decl-heading">"Your Kingdom Come, Your Will Be Done"</div>
+            <ul class="decl-list">
+              <li>Every Household</li>
+              <li>Every Campus</li>
+              <li>Every Domain of Culture</li>
+              <li>Every Nation</li>
+            </ul>
+            <div class="compass">South · East · North · West</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- WORSHIP 3 -->
+      <div class="flow-item">
+        <div class="flow-time">7:10 – 7:20</div>
+        <div class="flow-dot blue"></div>
+        <div class="flow-card blue-card" style="flex:1;">
+          <div class="flow-card-sub">Worship Set 3 · JRFC Worship</div>
+          <div class="flow-card-title">"Christ the Lord is Risen Today!"</div>
+        </div>
+      </div>
+
+      <!-- GIVING -->
+      <div class="flow-item">
+        <div class="flow-time">7:20 – 7:30</div>
+        <div class="flow-dot"></div>
+        <div class="flow-card" style="flex:1;">
+          <div class="flow-card-sub">Giving</div>
+          <div class="flow-card-title">Call to Spirit-Led Giving</div>
+          <div class="flow-card-detail">Called by <strong>Pastor Angelito Mojico</strong></div>
+        </div>
+      </div>
+
+      <!-- OFFERTORY SONG + SCRIPTURE -->
+      <div class="flow-item">
+        <div class="flow-time">7:30 – 7:45</div>
+        <div class="flow-dot"></div>
+        <div class="flow-card" style="flex:1;">
+          <div class="flow-card-sub">Offertory & Scripture · NewLife Church</div>
+          <div class="flow-card-title">"Because He Lives"</div>
+          <div class="flow-card-detail">Rendered during offertory — everyone invited to join in singing</div>
+          <div class="flow-card-detail" style="margin-top:10px;"><strong>Reading of the Scripture</strong> — <em>Jeremieh Esposo</em></div>
+        </div>
+      </div>
+
+      <!-- MESSAGE -->
+      <div class="flow-item">
+        <div class="flow-time">7:45 – 8:45</div>
+        <div class="flow-dot dark"></div>
+        <div class="flow-card dark-card" style="flex:1;">
+          <div class="flow-card-sub">Introduction by Pastor Vida Mei P. Rivera</div>
+          <div class="flow-card-title">The Message &amp; Ministering Time</div>
+          <div class="flow-card-detail">Preached by <strong>Rev. David Jonathan Alcantara</strong></div>
+        </div>
+      </div>
+
+      <!-- WORSHIP 4 -->
+      <div class="flow-item">
+        <div class="flow-time">8:45 – 8:55</div>
+        <div class="flow-dot blue"></div>
+        <div class="flow-card blue-card" style="flex:1;">
+          <div class="flow-card-sub">Worship Set 4 · Keilah Worship</div>
+          <div class="flow-card-title">"Living Hope / My Hope is Built on Nothing Less"</div>
+        </div>
+      </div>
+
+      <!-- CLOSING -->
+      <div class="flow-item">
+        <div class="flow-time">8:55 – 9:00</div>
+        <div class="flow-dot special"></div>
+        <div class="flow-card highlight" style="flex:1;">
+          <div class="flow-card-sub">Closing</div>
+          <div class="flow-card-title">Prayer, Benediction &amp; Celebration</div>
+          <div class="flow-card-detail">
+            <strong>Prayer</strong> — Pastor Stevenson<br>
+            <strong>Benediction</strong> — Pastor Joel Malonzo<br>
+            <strong>Blowing of the Shofar</strong> — Czar Dayao<br>
+            <strong>Dance: "CELEBRATION"</strong> — Pastor Mary Grace &amp; Team
+          </div>
+        </div>
+      </div>
+
+    </div><!-- end flow-container -->
+  </section>
+
+  <div class="gold-divider"></div>
+
+  <!-- ══════════════════════ EMPHASIS / DECLARATIONS ══════════════════════ -->
+  <section class="section emphasis-bg">
+    <div class="section-label" style="color: var(--gold-light);">Central Declaration</div>
+    <h2 class="section-title" style="color: #fff;">The Truth That Cannot Be Erased</h2>
+
+    <div class="truth-banner">
+      <div class="truth-label">It Cannot Be Erased · Deleted · Edited · Twisted</div>
+      <div class="truth-title">"IT REMAINS <span>GLORIOUS</span>."</div>
+      <p class="truth-body">This year's celebration of Resurrection Sunday centers on three historical events, witnessed and recorded by real people. They are the foundation for new lives — not just new attitudes or habits, but NEW LIVES.</p>
+      <ul class="truth-list">
+        <li>✝ Jesus' Death</li>
+        <li>🪨 Jesus' Burial</li>
+        <li>☀️ Jesus' Resurrection</li>
+      </ul>
+    </div>
+
+    <div class="final-call">
+      <p>"In a world shaken by conflict and uncertainty, will you be content with mere survival — or will you dare to live the <em>truly new and glorious life</em> found only in Christ?"</p>
+    </div>
+  </section>
+
+  <!-- ══════════════════════ FOOTER ══════════════════════ -->
+  <footer class="footer">
+    <div class="footer-left">
+      <div class="church">Pampanga Global Methodist Church</div>
+      <div class="newlife">NewLife Church · Arayat, Pampanga</div>
+    </div>
+
+    <div class="footer-center">
+      <span class="cross">✝</span>
+      <div class="date">April 05, 2026</div>
+      <div style="font-family:'Cormorant Garamond',serif; font-size:12px; color:var(--gold-light); font-style:italic; margin-top:4px;">Resurrection Sunday</div>
+    </div>
+
+    <div class="footer-right">
+      <div class="preacher">Rev. David Jonathan Alcantara</div>
+      <div class="preacher-title">Guest Preacher</div>
+    </div>
+
+    <div class="kids-note">
+      <p><strong>Note for Kids:</strong> Children will have their own worship celebration, but they can be prayed for during prayer time in the sanctuary. The deacons are in charge of their gathering.</p>
+    </div>
+  </footer>
+
+</div><!-- end page -->
+</body>
+</html>
